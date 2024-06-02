@@ -4,8 +4,8 @@
 
 #define IO_USERNAME  "levyfernandes14@gmail.com" //<----------Mudar para o seu
 #define IO_KEY       "teste123" //<----------Mudar para o seu
-const char* ssid = "Wokwi-GUEST";
-const char* password ="";
+const char* ssid = "NPITI-IoT";
+const char* password ="NPITI-IoT";
 
 const char* mqttserver = "maqiatto.com";
 const int mqttport = 1883;
