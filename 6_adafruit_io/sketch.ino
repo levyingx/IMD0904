@@ -4,8 +4,8 @@
 
 #define IO_USERNAME  "levying" //<----------Mudar para o seu
 #define IO_KEY       "aio_xabq33QRzdoaJTCJsesw4XMdqAyL" //<----------Mudar para o seu
-const char* ssid = "Wokwi-GUEST";
-const char* password ="";
+const char* ssid = "NPITI-IoT";
+const char* password ="NPITI-IoT";
 
 const char* mqttserver = "io.adafruit.com";
 const int mqttport = 1883;
