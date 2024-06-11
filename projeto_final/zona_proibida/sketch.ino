@@ -1,3 +1,8 @@
+// Zona proibida:
+// Atua como servidor BLE;
+// Detecta o Tracker;
+// Envia a distância entre o tracker e a zona para a central (aq ta mandando a direto pro broker, tem q mudar);
+
 #include <WiFi.h>
 #include <PubSubClient.h>
 #include <math.h>
@@ -125,7 +130,7 @@ void loop() {
   unsigned long now = millis();
   if (now - lastMsg > 2000) {
     lastMsg = now;
-    
+    /*
     pot = analogRead(POT)/100; // Mudar essa parte pra ler a distância 
     char s_pot[8];
     dtostrf(pot,1,2,s_pot);
@@ -133,5 +138,6 @@ void loop() {
     Serial.println(s_pot);
     Serial.println(pot);
     client.publish("levyfernandes14@gmail.com/pot", s_pot);
+    */
   }
 }

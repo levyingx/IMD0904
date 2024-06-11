@@ -13,8 +13,12 @@
 - Representa a posição do gato;
 - Se comunica diretamente com o ESP32 da zona proibida;
 #### Zona proibida:
+- Atua como servidor BLE;
 - Detecta o Tracker;
 - Envia a distância entre o tracker e a zona para a central;
 #### Dashboard:
 - Recebe dados dos dispositivos e mostra no aplicativo;
 - Tem botões para executar ações e envia esses dados para a central;
+---
+#### Códigos de exemplo:
+[Zona proibida](#)
