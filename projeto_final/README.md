@@ -17,5 +17,4 @@
 - Envia a distância entre o tracker e a zona para a central;
 #### Dashboard:
 - Recebe dados dos dispositivos e mostra no aplicativo;
-
 - Tem botões para executar ações e envia esses dados para a central;
