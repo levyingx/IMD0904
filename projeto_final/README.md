@@ -1,6 +1,6 @@
 #### Itens:
 - 2 ESP32 com conexão BLE (tracker e central);
-- 1 ou mais dispositivos com conexâo BLE (zonas proibidas)
+- 1 ou mais dispositivos com conexâo BLE (zonas proibidas);
 - 1 buzzer ou item para afastar o gato da zona (trigger);
 - Broker MQTT (MaQiaTTo);
 - Aplicativo pra dashboard (IoT MQTT Panel);
@@ -23,3 +23,5 @@
 ---
 #### Códigos de exemplo:
 [Zona proibida](#)
+[Central](#)
+[Tracker](#)
