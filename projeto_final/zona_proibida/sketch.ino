@@ -8,12 +8,9 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
     String rssiString;
 
     void onResult(BLEAdvertisedDevice advertisedDevice) {
-      // Check if the found device's address matches the specific address
       if (strcmp(advertisedDevice.getAddress().toString().c_str(), "74:b0:59:8d:3b:b9") == 0) {
-        // Convert the RSSI value to a string
         rssiString = String(advertisedDevice.getRSSI());
 
-        // Print the device's address and RSSI if it matches
         Serial.print("Specific device found: ");
         Serial.print(advertisedDevice.getAddress().toString().c_str());
         Serial.print(" RSSI: ");
@@ -26,20 +23,19 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Starting Bluetooth...");
 
-  // init BLE
-  BLEDevice::init("");
 
-  // criar scanner
-  BLEScan* pBLEScan = BLEDevice::getScan();
+  BLEDevice::init("");  // init BLE
+
+
+  BLEScan* pBLEScan = BLEDevice::getScan();  // criar scanner
   pBLEScan->setAdvertisedDeviceCallbacks(new MyAdvertisedDeviceCallbacks());
 
-  // intervalo e window 
-  pBLEScan->setInterval(1349);
+  pBLEScan->setInterval(1349); 
   pBLEScan->setWindow(449);
   pBLEScan->setActiveScan(true); 
 
-  // iniciar scan
-  pBLEScan->start(1, false);
+
+  pBLEScan->start(1, false);  // iniciar scan
 }
 
 void loop() {
