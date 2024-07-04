@@ -1,5 +1,3 @@
-#### [Slides](https://docs.google.com/presentation/d/1LXmt2cqzdSEYSe5kiE7CTHmYfTCaHt1-dbXCQdyVNHU/edit#slide=id.p)
-
 #### Itens:
 - 2 ou mais ESP32 com conexão BLE (trackers e área proibidas);
 - 1 trigger para afastar o animal da área (trigger);
@@ -22,7 +20,3 @@
 - Recebe dados dos dispositivos e mostra no aplicativo;
 - Tem botões para executar ações e envia esses dados para a central;
 ---
-#### Códigos de exemplo:
-[Zona proibida](#)
-[Central](#)
-[Tracker](#)
